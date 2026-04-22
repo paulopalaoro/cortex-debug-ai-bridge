@@ -89,5 +89,19 @@ export default tseslint.config(
         rules: {
             '@typescript-eslint/no-require-imports': 'off',
         }
+    },
+    {
+        // MCP bridge files ported from Cortex_debug_AI — relax style rules
+        files: ['src/frontend/mcp/**/*.ts'],
+        rules: {
+            '@stylistic/max-len': 'off',
+            '@stylistic/max-statements-per-line': 'off',
+            '@stylistic/arrow-parens': 'off',
+            '@stylistic/operator-linebreak': 'off',
+            '@typescript-eslint/no-unsafe-return': 'off',
+            '@typescript-eslint/restrict-template-expressions': 'off',
+            '@typescript-eslint/no-require-imports': 'off',
+            'no-control-regex': 'off',
+        }
     }
 );

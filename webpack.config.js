@@ -4,14 +4,12 @@ const path = require('path');
 const child_process = require('child_process');
 const webpack = require('webpack'); // to access built-in plugins
 
-const gitStatus = child_process
-    .execSync('git status --short')
-    .toString()
-    .trim();
-const commitHash = child_process
-    .execSync('git rev-parse --short HEAD')
-    .toString()
-    .trim() + (gitStatus === '' ? '' : '+dirty');
+let commitHash = 'no-git';
+try {
+    const gitStatus = child_process.execSync('git status --short').toString().trim();
+    const hash = child_process.execSync('git rev-parse --short HEAD').toString().trim();
+    commitHash = hash + (gitStatus === '' ? '' : '+dirty');
+} catch (_) { /* not a git repo */ }
 
 const extensionConfig = {
     target: 'node',

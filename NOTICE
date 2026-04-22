@@ -1,0 +1,21 @@
+Cortex-Debug AI Bridge
+Copyright (c) 2026 Paulo Palaoro
+
+This product includes software developed by:
+
+  Marcel Ball — Cortex-Debug (https://github.com/Marus/cortex-debug)
+  Copyright (c) 2017-2023 Marcel Ball — MIT License
+
+  The core GDB debug adapter, SWO/RTT decoding, configuration provider,
+  live watch, and all server controllers (OpenOCD, J-Link, ST-Link, PyOCD,
+  QEMU, BMP, P&E Micro) are taken from Cortex-Debug and remain under
+  Marcel Ball's MIT License.
+
+Original work by Paulo Palaoro (src/frontend/mcp/):
+  - MCP HTTP/SSE server (server.ts)
+  - DAP bridge for Claude Code integration (dapBridge.ts)
+  - OpenOCD telnet client (openocdManager.ts)
+  - STM32 chip maps — G0, F0, F1, F3, F4, G4 (peripherals/chipMap.ts)
+  - GPIO, SPI, I2C, PWM peripheral drivers (peripherals/stm32Init.ts)
+  - 23 MCP debug tools (tools/)
+  - Peripheral Tester UI panel (panels/PeripheralTesterPanel.ts)
