@@ -3213,7 +3213,7 @@
         "mcu-debug.peripheral-viewer"
     ],
     "main": "./dist/extension.js",
-    "name": "cortex-debug",
+    "name": "cortex-debug-ai-bridge",
     "publisher": "paulopalaoro",
     "license": "MIT",
     "repository": {
