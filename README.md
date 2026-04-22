@@ -1,5 +1,8 @@
 # Cortex-Debug AI Bridge
 
+[![GitHub](https://img.shields.io/badge/GitHub-paulopalaoro%2Fcortex--debug--ai--bridge-blue?logo=github)](https://github.com/paulopalaoro/cortex-debug-ai-bridge)
+[![Release](https://img.shields.io/github/v/release/paulopalaoro/cortex-debug-ai-bridge)](https://github.com/paulopalaoro/cortex-debug-ai-bridge/releases/latest)
+
 Extensão unificada para depuração de microcontroladores ARM Cortex-M com suporte a **testes interativos de periféricos** e **servidor MCP** para integração com agentes de IA.
 
 Baseada no [Cortex-Debug](https://github.com/Marus/cortex-debug) de Marcel Ball, com funcionalidades adicionais desenvolvidas por Paulo Palaoro (Alfatronic).
@@ -109,6 +112,9 @@ Ou via linha de comando:
 ```
 code --install-extension cortex-debug-0.0.1.vsix
 ```
+
+Baixe a última versão em:
+[github.com/paulopalaoro/cortex-debug-ai-bridge/releases](https://github.com/paulopalaoro/cortex-debug-ai-bridge/releases)
 
 ---
 
